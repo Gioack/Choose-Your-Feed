@@ -1,1 +1,3 @@
-# Choose-Your-Feed
+# Block-YouTube-Music
+
+This extension blocks YouTube musical videos!  

@@ -1,0 +1,11 @@
+:root {
+    --c-background: rgb(208, 195, 195);
+    --c-text: #121212;
+    --c-extra: #ffff00;
+}
+
+.dark-mode {
+    --c-background: #121212;
+    --c-text: rgb(208, 195, 195);
+    --c-extra: #121212;
+}

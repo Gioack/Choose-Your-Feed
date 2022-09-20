@@ -1,0 +1,38 @@
+{
+    "name": "Block YouTube Music",
+    "version": "1.0",
+    "manifest_version": 3,
+    "description": "Block YouTube™ musical videos!",
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": "icons/App-logo-red128.png"
+    },
+    "icons": {
+        "16": "icons/App-logo-red16.png",
+        "32": "icons/App-logo-red32.png",
+        "48": "icons/App-logo-red48.png",
+        "128": "icons/App-logo-red128.png"
+    },
+    "permissions": [
+        "tabs",
+        "storage"
+    ],
+    "host_permissions": [
+        "https://www.youtube.com/*"
+    ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "https://www.youtube.com/*"
+            ],
+            "js": [
+                "content_script.js"
+            ],
+            "all_frames": false,
+            "run_at": "document_end"
+        }
+    ]
+}

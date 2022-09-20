@@ -1,0 +1,85 @@
+html {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    min-height: 100%;
+    margin: 0;
+    background-color: var(--c-background);
+    color: var(--c-text);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#change-mode-btn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: url('icons/Sun-logo.png');
+    background-size: cover;
+    height: 101px;
+    width: 101px;
+    padding: 0;
+    cursor: pointer;
+    border: 0;
+}
+
+#change-mode-btn.dark {
+    background: url('icons/Moon-logo.png');
+    background-size: cover;
+}
+
+#logo-cnt {
+    height: 100px;
+}
+
+#logo {
+    height: 100%;
+}
+
+#motivational-message {
+    font-size: 60px;
+    text-align: center;
+}
+
+
+#caption-times {
+    font-size: 20px;
+    margin-bottom: 0px;
+}
+
+#times {
+    color: var(--c-extra);
+    font-size: 80px;
+    margin: 0px 0 40px 0px;
+}
+
+#buttons-cnt {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#buttons-cnt button {
+    margin: 20px 60px 20px 60px;
+    color: var(--c-extra);
+    border: solid 2.3px var(--c-extra);
+    background-color: var(--c-background);
+    padding: 10px;
+    font-size: 25px;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+#buttons-cnt button:hover {
+    color: var(--c-extra);
+    border-color: var(--c-extra);
+}
+
+#buttons-cnt button:active {
+    transform: scale(.98);
+}
