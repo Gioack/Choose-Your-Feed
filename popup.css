@@ -1,11 +1,12 @@
 html,
 body {
     margin: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
 body {
     padding: 10px;
-    width: 250px;
+    width: 400px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -27,18 +28,32 @@ h2 {
     margin: 7.5px 0px;
 }
 
-#categories-ctn {
+
+
+
+/* #categories-ctn {
     margin: 0;
+    padding: 0;
+    width: 100%;
     clear: both;
     list-style: none;
 }
 
-#categories-row-ctn {
+.categories-row-ctn {
+    padding: 0;
+    width: 100%;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+li {
     list-style-type: none;
     list-style-position: outside;
     list-style: none;
-    padding: 10px;
-    float: left;
+
 }
 
 input[type="checkbox"]:not(:checked),
@@ -51,20 +66,32 @@ input[type="checkbox"]+label {
     display: inline-block;
     padding: 10px;
     cursor: pointer;
-    border: 1px solid black;
-    color: black;
-    background-color: white;
-    margin-bottom: 10px;
+    border: 1.5px solid var(--c-text);
+    border-radius: 8px;
+    color: var(--c-text);
+    background-color: var(--c-background);
+    margin: 0 10px 15px 10px;
+    text-align: center;
+    vertical-align: middle;
+    width: 90px;
+    height: 30px;
+    font-weight: 700;
+    font-size: 13px;
 }
 
 input[type="checkbox"]:checked+label {
-    border: 1px solid white;
-    color: white;
-    background-color: black;
+    border: 1.5px solid var(--c-background);
+    color: var(--c-background);
+    background-color: var(--c-text);
 }
 
+.one-line-text {
+    display: block;
+    text-align: center;
+    line-height: 220%;
+}
 
-#dark-mode-ctn {
+/* #dark-mode-ctn {
     display: flex;
     width: 100%;
 }
@@ -136,4 +163,4 @@ input:checked+.slider:before {
 
 .slider.round:before {
     border-radius: 50%;
-}
+} */

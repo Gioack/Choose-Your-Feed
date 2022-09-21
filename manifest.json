@@ -1,8 +1,8 @@
 {
-    "name": "Block YouTube Music",
+    "name": "Intentional YouTube Feed",
     "version": "1.0",
     "manifest_version": 3,
-    "description": "Block YouTube™ musical videos!",
+    "description": "Make YouTube™ Feed more intentional",
     "action": {
         "default_popup": "popup.html",
         "default_icon": "icons/App-logo-red128.png"
