@@ -1,11 +1,11 @@
 :root {
-    --c-background: #E8F9FD;
+    --c-background: white;
     --c-text: #121212;
-    --c-extra: #ffff00;
+    --c-extra: #121212;
 }
 
 .dark-mode {
     --c-background: #121212;
     --c-text: #E8F9FD;
-    --c-extra: #121212;
+    --c-extra: #ffff00;
 }

@@ -1,6 +1,6 @@
 export function toggleLightModeIfNeeded() {
     chrome.storage.local.get({ 'isDarkModeSet': true }, function (data) {
-        if (data.isDarkModeSet == false) {
+        if (data.isDarkModeSet == true) {
             toggleLightUserInterface();
             if (location.href.split("/").pop() == "popup.html") {
                 document.getElementById("darkmode-checkbox").checked ^= 1;
@@ -40,10 +40,10 @@ function toggleColors() {
 function toggleAppLogo() {
     let appLogo = document.getElementById("logo");
     if (isDarkModeActive()) {
-        appLogo.src = "icons/App-logo-white.png";
+        appLogo.src = "icons/IntendedTube-logo-white.png";
     }
     else {
-        appLogo.src = "icons/App-logo-yellow.png";
+        appLogo.src = "icons/IntendedTube-logo-black.png";
     }
 };
 

@@ -1,3 +1,7 @@
+chrome.storage.local.get({ "categoriesAllowed": [] }, function (data) {
+    console.log(data.categoriesAllowed);
+})
+
 chrome.tabs.onUpdated.addListener(function (tabId, changeInfo, tab) {
     if (tab.url.includes("https://www.youtube.com/watch?v=") && changeInfo.url) {
         firstTab = tabId;
@@ -10,4 +14,5 @@ chrome.runtime.onMessage.addListener(function (msg, sender, sendResponse, tabId)
         chrome.storage.local.set({ timesPopped: data.timesPopped + 1 });
     });
     chrome.tabs.update(firstTab, { 'url': chrome.runtime.getURL('music-blocked-mess.html') });
+    chrome.storage.local.set({ categoryBlocked: msg.text });
 });     
